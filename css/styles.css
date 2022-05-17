@@ -7,7 +7,7 @@
     padding: 0rem;
 }
 
-li, a, button{
+.nav-link, .link, .vol-btn{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
@@ -36,7 +36,7 @@ header{
 
 .nav-links{
     list-style: none;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 
 .nav-links li{
@@ -49,15 +49,21 @@ header{
 }
 
 .nav-links li a:hover{
-    color: rgba(6, 184, 51, 0.8);
+    color: #046b09;
     font-weight: bold;
+    border-bottom: 4px solid #046b09;
 }
 
+.nav-links li a.active{
+    border-bottom: 4px solid #046b09;
+    color: #046b09;
+    font-weight: bold;
+}
 .btn{
     margin-left: 1rem;
 }
 button{
-    padding: 0.8rem 2.1rem;
+    padding: 0.8rem 2rem;
     background-color: rgb(64, 245, 106);
     border: none;
     border-radius: 2rem;
