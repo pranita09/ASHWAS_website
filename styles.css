@@ -72,7 +72,7 @@ nav ul li a button{
     font-family: 'Montserrat', sans-serif;
 }
 nav ul li a button:hover{
-    background-color: rgb(105, 230, 188) ;
+    background-color: rgb(6, 184, 51) ;
     transition: .5s ease-out;
 }
 .check-btn{
@@ -222,4 +222,86 @@ nav ul li a button:hover{
     }
 }
 
+/* ngo info section */
 
+.ngo-info-1{
+    background-color: whitesmoke;
+    width: 67%;
+    height: 500px;
+    padding: 50px 50px;
+    margin-bottom: 60px;
+    float: left;
+}
+.ngo-info-2 img{
+    width: 3rem;
+    height: 3rem;
+}
+.ngo-info-2{
+    float: right;
+    background-color: rgb(91, 205, 110);
+    width: 33%;
+    height: 500px;
+    padding: 50px 50px;
+    margin-bottom: 60px;
+    font-size: 1rem;
+}
+.ngo-info-2 #p1,
+.ngo-info-2 #p2,
+.ngo-info-2 #p3{
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+.ngo-info-2 #n1,
+.ngo-info-2 #n2,
+.ngo-info-2 #n3{
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    margin-bottom: 0;
+    font-size: 2.3rem;
+}
+.ngo-info-1 h2{
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.line1{
+    margin-top: -5px;
+    width: 30%;
+    opacity: 1;
+    border: 2px solid;
+    border-color: rgba(17, 142, 48, 0.8);
+}
+.ngo-info-txt-1{
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    font-family: 'Poppins',sans-serif;
+}
+.ngo-info-txt-2{
+    margin-top: 1.8rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+.ngo-info-txt button{
+    padding: 0.8rem 2rem;
+    margin-top: 0;
+    background-color: rgba(6, 184, 51, 0.8);
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.ngo-info-txt button:hover{
+    background-color: rgb(6, 184, 51) ;
+    transition: .5s ease-out;
+}
