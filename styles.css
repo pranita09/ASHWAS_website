@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* navbar section */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    background: whitesmoke;
+    height: 5.5rem;
+    width: 100%;
+    box-shadow: 0px 5px 10px grey;
+}
+
+.logo-name{
+    color: black;
+    font-size: 2rem;
+    line-height: 80px;
+    /* padding: 0 100px; */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+nav img{
+    margin-left: 5rem;
+    margin-top: 0.5rem;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+a.active, .link:hover{
+    background: rgb(64, 245, 106);
+    transition: .5s;
+}
+nav ul li a button{
+    padding: 0.8rem 2rem;
+    background-color: rgba(6, 184, 51, 0.8);
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+nav ul li a button:hover{
+    background-color: rgb(105, 230, 188) ;
+    transition: .5s ease-out;
+}
+.check-btn{
+    font-size: 1.8rem;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo-name{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .check-btn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transform: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.active, .link:hover{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/* slider section */
+
+.slideshow{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.slideshow-item{
+    /* width: inherit;
+    height: inherit; */
+    position: absolute;
+    opacity: 0 ;
+    animation: cycleImages 31s infinite;
+}
+.slideshow-item img{
+    height: 30.8rem;
+    width: 81.92rem;
+    object-fit: cover;
+    animation: zoom 31s infinite;
+}
+.slideshow-item:nth-child(1), .slideshow-item:nth-child(1) img {
+    animation-delay: 0s;
+}
+.slideshow-item:nth-child(2), .slideshow-item:nth-child(2) img {
+    animation-delay: 10s;
+}
+.slideshow-item:nth-child(3), .slideshow-item:nth-child(3) img {
+    animation-delay: 20s;
+}
+.slideshow-item-text{
+    max-width: 60%;
+    max-height: 20%;
+    position: absolute;
+    margin-top: 5rem;
+    top: 50%;
+    left: 0;
+    transform: translateY(-70%);
+    background-color: rgba(21, 20, 20, 0.8);
+    color: #fff;
+    padding: 10rem 5rem;
+}
+.slideshow-item-text h5{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+}
+.slideshow-item-text p{
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+@keyframes cycleImages{
+    25%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+
+@keyframes zoom{
+    100%{
+        transform: scale(1.3);
+    }
+}
+
+@media screen and (max-width:952px){
+    .slideshow-item-text{
+        max-width: 70%;
+        padding: 2rem 0.3rem;
+    }
+    .slideshow-item-text h5{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:858px){
+    .slideshow-item-text{
+        max-width: 100%;
+        padding: 1rem;
+        top: initial;
+        bottom: 0;
+        transform: initial;
+    }
+    .slideshow-item-text h5{
+        font-size: 1.5rem;
+    }
+    .slideshow-item-text p{
+        font-size: 0.3rem;
+    }
+}
+
+
