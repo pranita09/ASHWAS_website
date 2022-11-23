@@ -25,7 +25,6 @@ nav{
     width: 100%;
     box-shadow: 0px 5px 10px grey;
 }
-
 .logo-name{
     color: black;
     font-size: 2rem;
@@ -35,12 +34,10 @@ nav{
     font-weight: 800;
     margin-bottom: 50rem;
 }
-
 nav img{
     margin-left: 5rem;
     margin-top: 0.5rem;
 }
-
 nav ul{
     float: right;
     margin-right: 20px;
