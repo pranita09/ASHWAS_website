@@ -11,9 +11,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
 /* navbar section */
-
 header{
     display: flex;
     justify-content: space-between;
